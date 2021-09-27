@@ -1,0 +1,141 @@
+:root {
+  /* Colors */
+  /* Primary Colors */
+  --clr-red: hsl(0, 78%, 62%);
+  --clr-cyan: hsl(180, 62%, 55%);
+  --clr-orange: hsl(34, 97%, 64%);
+  --clr-blue: hsl(212, 86%, 64%);
+  /* Neutral Colors */
+  --clr-dk-blue: hsl(234, 12%, 34%);
+  --clr-gr-blue: hsl(229, 6%, 66%);
+  --clr-lght-gray: hsl(0, 0%, 98%);
+}
+
+body {
+  margin: 0;
+  font-size: 0.94rem;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-lght-gray);
+}
+
+/* Containers */
+/* Heading Section */
+.header {
+  text-align: center;
+  margin: 3rem 2rem 1rem 2rem;
+  max-width: 90vw;
+}
+
+/* Main Section */
+.cards-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1rem 2rem 5rem 2rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0px 10px 23px 3px hsl(212, 86%, 64%, 15%);
+  border-radius: .5rem;
+  overflow: hidden;
+  margin: 1rem;
+  width: 25vw;
+}
+
+.colored-sec {
+  height: .25rem;
+}
+
+.supervisor {
+  background-color: var(--clr-cyan);
+}
+
+.team {
+  background-color: var(--clr-red);
+}
+
+.karma {
+  background-color: var(--clr-orange);
+}
+
+.calculator {
+  background-color: var(--clr-blue);
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.card-footer {
+  text-align: right;
+}
+
+/* Text Section */
+h1, h2, h3 {
+  color: var(--clr-dk-blue);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  color: var(--clr-gr-blue);
+}
+
+.main-heading {
+  font-weight: 200;
+  font-size: 2.3rem;
+}
+
+.additional-heading {
+  font-weight: 600;
+  font-size: 2.3rem;
+  display: block;
+}
+
+.paragraph-heading {
+  font-size: 1.2rem;
+}
+
+.main-paragraph {
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  width: 35rem;
+}
+
+.sec-paragraph {
+  font-size: 0.8rem;
+  margin-right: .5rem;
+  margin-bottom: 2rem;
+}
+
+/* Media Queries */
+@media (max-width: 750px) {
+  .cards-section {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 85vw;
+  }
+
+  .main-paragraph {
+    width: auto;
+  }
+
+  .main-heading, .additional-heading {
+    font-size: 1.3rem;
+  }
+}
